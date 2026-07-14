@@ -1,0 +1,21 @@
+<div id="narrative_director_settings" class="inline-drawer">
+  <div class="inline-drawer-toggle inline-drawer-header">
+    <b>剧情导演</b><div class="inline-drawer-icon fa-solid fa-circle-chevron-down down"></div>
+  </div>
+  <div class="inline-drawer-content">
+    <label class="checkbox_label"><input id="nd_enabled" type="checkbox"><span>启用自动剧情规划与审查</span></label>
+    <label>分析模型来源<select id="nd_provider"><option value="current">复用当前 SillyTavern 模型</option><option value="openai">独立 OpenAI 兼容模型</option></select></label>
+    <div class="nd-openai-only">
+      <label>Base URL<input id="nd_base_url" type="url" placeholder="https://api.example.com/v1"></label>
+      <label>API Key<input id="nd_api_key" type="password" autocomplete="off"></label>
+      <label>模型名<input id="nd_model" type="text" placeholder="gpt-4.1-mini"></label>
+    </div>
+    <label>分析上下文<select id="nd_context_mode"><option value="recent">状态摘要 + 最近消息</option><option value="full">完整聊天记录</option></select></label>
+    <label>最近消息数量<input id="nd_recent_messages" type="number" min="2" max="100" step="1"></label>
+    <div class="nd-actions"><button id="nd_bootstrap" class="menu_button">从当前资料建档</button><button id="nd_freeze" class="menu_button">冻结剧情状态</button></div>
+    <details><summary>剧情档案</summary><textarea id="nd_story" rows="10" placeholder="JSON 格式，可在建档后编辑"></textarea></details>
+    <details><summary>关系档案</summary><textarea id="nd_relationships" rows="8" placeholder="JSON 格式"></textarea></details>
+    <details><summary>角色演绎档案</summary><textarea id="nd_portrayals" rows="10" placeholder="JSON 格式"></textarea></details>
+    <div id="nd_status" class="nd-status"></div>
+  </div>
+</div>
