@@ -1,0 +1,13 @@
+{
+  "display_name": "剧情导演",
+  "loading_order": 20,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "SAWA-25",
+  "version": "0.1.0",
+  "minimum_client_version": "1.12.0",
+  "homePage": "https://github.com/SAWA-25/sillytavern-narrative-director",
+  "auto_update": true
+}
