@@ -1,0 +1,8 @@
+#narrative_director_settings label { display: flex; flex-direction: column; gap: 4px; margin: 8px 0; }
+#narrative_director_settings .checkbox_label { flex-direction: row; align-items: center; }
+#narrative_director_settings input, #narrative_director_settings select, #narrative_director_settings textarea { width: 100%; box-sizing: border-box; }
+#narrative_director_settings textarea { font-family: var(--mainFontFamily, monospace); resize: vertical; }
+.nd-actions { display: flex; gap: 8px; margin: 10px 0; }
+.nd-status { font-size: 0.9em; color: var(--SmartThemeBodyColor); margin: 8px 0; white-space: pre-wrap; }
+.nd-review { border-left: 3px solid var(--SmartThemeQuoteColor); margin: 6px 0; padding: 6px 8px; font-size: 0.9em; }
+.nd-review-high { border-left-color: #d9534f; }
